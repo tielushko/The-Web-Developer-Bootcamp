@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata goes here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form Exercise</title>
+</head>
+<body>
+    <!-- Content goes here -->
+
+    <h1>Register</h1>
+
+    <form>
+        <label for="first">First Name: </label>
+        <input id="first" name="first-name" type="text" placeholder="John" required> 
+        <label for="last">Last Name: </label>
+        <input id="last" name="last-name" type="text" placeholder="Smith" required> 
+
+        <div>
+            <label for="male">Male: </label>
+            <input id="male" name="gender" type="radio" value="male" required>
+            <label for="female">Female: </label>
+            <input id="female" name="gender" type="radio" value="female">
+        </div>
+    
+        <div>
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" placeholder="your email" required> 
+            <label for="password">Password: </label>
+            <input id="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" required>
+        </div>
+
+        <div>
+            <label>Birthday: 
+                <select name="month">
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+                
+                <select name="day">
+                    <option>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+
+                <select name="year">
+                    <option>Year</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="terms">I agree to Terms and Conditions: </label>
+            <input id="terms" type="checkbox" required>
+        </div>
+
+        <button>Sign-Up</button>
+    </form>
+
+    </body>
+</html>

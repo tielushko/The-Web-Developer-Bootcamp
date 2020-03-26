@@ -14,9 +14,49 @@
     <!-- Action: where the form gets sent to (server/page) -->
     <!-- Method: what HTTP method is used (GET/POST) get for read, post for write -->
     <form action="" method="">
-        <input name="username" type="text" placeholder="Username"> 
-        <input name="password" type="password" placeholder="Password">
+        <label>Username: 
+            <input type="text" placeholder="Username" required>
+        </label>
+         
+        <label>Password:
+            <input type="password" placeholder="Password" required>
+        </label>
         <input type="submit"> 
     </form>
+    <br>
+    <!-- Alternative syntax for labels. -->
+    <form>
+    <label for="email">Username: </label>
+    <input id="email" type="email" placeholder="E-mail" required>
+    <label for="password">Password: </label>
+    <input id="password" type="password" placeholder="Password" required>
+    <input type="submit"> 
+    </form>
+
+    <!-- radio button -->
+    <input type="radio">
+    <input type="checkbox">
+
+    <form>
+        <p>Do you prefer Cats or Dogs?</p>
+        <label for="dogs">Dogs: </label>
+        <input id="dogs" name="petChoice" type="radio" value="dog" required>
+        <label for="cats">Cats: </label>
+        <input id="cats" name="petChoice" type="radio" value="cat">
+
+        <p>What is your favorite color?</p> <!-- value attribute is important to use! always!-->
+        <select name="color" required>
+            <option value="red">Red</option>
+            <option value ="yellow">Yellow</option>
+            <option value ="green">Green</option>
+        </select> 
+
+        <textarea name="paragraph" rows="10" cols="10"></textarea>
+        <button>GO!</button> <!--button at the end of form automatically becomes a submit button-->
+    </form>
+    <!-- select area -->
+    <!-- text area tag -->
+
+  
 </body>
 </html>

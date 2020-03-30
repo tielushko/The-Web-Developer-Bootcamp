@@ -1,0 +1,40 @@
+/* Element */
+h1 {
+
+}
+
+/*Class*/
+.hello {
+
+}
+
+/*id*/
+#highlight {
+
+}
+
+/*Star - selects everything on the page -not used often */
+* {
+
+}
+
+/* descendant selector - chains two or more selectors together*/ 
+li a { /*selects all anchor tags that are descendants of the li only*/
+
+}
+/*adjacent selector - ul's that come immediately after the h4*/
+
+h4 + ul {
+    
+}
+
+/*attribute selector*/
+a[href="http://www.google.com"] {
+
+}
+
+/*nth of type*/
+
+ul:nth-of-type(3) {
+    
+}

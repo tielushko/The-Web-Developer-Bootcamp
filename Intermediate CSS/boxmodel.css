@@ -1,0 +1,11 @@
+p {
+/*content - width and height*/
+width: 50%; /*half of the parent element (in this case the body)*/
+height: 50px;
+/*border*/
+border: 2px solid blue;
+/*padding*/
+padding: 10px;
+/*margin*/
+margin: 10px auto;
+}

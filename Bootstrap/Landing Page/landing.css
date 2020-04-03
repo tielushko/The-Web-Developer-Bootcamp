@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: urL(https://source.unsplash.com/N_G2Sqdy9QY);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#content {
+    text-align: center;
+    padding-top: 25%; 
+   
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 800;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+h1, h3 {
+    color: #a9beb3;
+}
+
+h3 {
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+}
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.fa-paw {
+    margin-right: 5px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    background: #a9beb3;
+}
+
+.btn-default {
+    background-color: rgba(247,249,248,0);
+    color: #a9beb3;
+}
+.btn-default:hover {
+    background-color: rgba(247,249,248,0.5);
+    color: #a9beb3;
+}
+
+.navbar-default .navbar-nav>li>a .navbar-default .navbar-nav>.active>a {
+    color: #a9beb3;
+}
+
+.fa-user-plus, .fa-user{
+    margin-left: 5px;
+}

@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    color: #2c3e50;
+    background: #ecf0f1;
+}
+.navbar {
+    background: #2c3e50;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-brand {
+    color:white;
+}
+.glyphicon{
+    margin-right: 5px;
+}
+
+.glyphicon-camera{
+    margin-right: 10px;
+}

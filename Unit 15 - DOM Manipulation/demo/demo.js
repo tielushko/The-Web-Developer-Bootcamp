@@ -25,7 +25,6 @@ console.log(ul.innerHTML);
 var link = document.getElementsByTagName("a")[0];
 link.setAttribute("href", "http://www.bing.com");
 
-
 //toggling on and off the css classes.
 
 /* 
@@ -49,3 +48,23 @@ tag.classList.toggle("some-class");
 
 //NOTE! classList is NOT AN ARRAY. must use .add
 */
+
+//addEventListener
+
+var h1 = document.querySelector("h1");
+h1.addEventListener("click", function() {
+    console.log("You cliked h1");
+    h1.style.backgroundColor = "orange";
+});
+
+document.querySelector("ul").addEventListener("click", function() {
+    console.log("you clicked ul");  
+});
+
+var lis = document.querySelectorAll("li");
+
+for (var i = 0; i < lis.length; i++) {
+    lis[i].addEventListener("click", function() {
+        this.style.color = "pink";     
+    });
+}

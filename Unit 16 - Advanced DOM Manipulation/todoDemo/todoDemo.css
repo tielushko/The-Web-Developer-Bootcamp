@@ -1,0 +1,8 @@
+.selected {
+    color: green;
+}
+
+.done {
+    color: green;
+    text-decoration: line-through;
+}

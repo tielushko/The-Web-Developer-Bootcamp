@@ -89,3 +89,6 @@ Material Related to the "The Web Developer Bootcamp" by Colt Steele on Udemy
   
   ### Section 17: RGB Color Game Project
   * [Project: RGB Color Game](https://tielushko.github.io/RGB-Color-Guessing-Game/)
+  
+  ### Section 18: Intro to jQuery
+  * IN PROGRESS!

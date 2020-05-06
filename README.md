@@ -72,7 +72,11 @@ Material Related to the "The Web Developer Bootcamp" by Colt Steele on Udemy
   * Exercises
   
   ### Section 14: JavaScript Basics: Objects
-  * 
+  * Intro to Objects
+  * Objects vs. Arrays 
+  * Adding methods to objects
+  * Movie Database Exercise
+ 
   ### Section 15: DOM Manipulation
   * Intro to DOM
   * Select and Manipulate

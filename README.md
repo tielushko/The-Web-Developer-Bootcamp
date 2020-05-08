@@ -91,4 +91,9 @@ Material Related to the "The Web Developer Bootcamp" by Colt Steele on Udemy
   * [Project: RGB Color Game](https://tielushko.github.io/RGB-Color-Guessing-Game/)
   
   ### Section 18: Intro to jQuery
-  * IN PROGRESS!
+  * Selectors
+  * Useful methods: attr() val() addClass() removeClass() toggleClass() text() html()
+  
+  ### Section 19: Advanced jQuery
+  * click() keypress() on() methods
+  * jQuery effects

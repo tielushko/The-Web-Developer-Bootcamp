@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <!-- action specifies where the form data should be sent via http request 
+    
+    method is using which method we use for the http request (get/post)-->
+    <form action="/tacos">
+      <p>
+        <label for="username">Enter a username: </label
+        ><input
+          type="text"
+          placeholder="Username"
+          id="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter a password:</label
+        ><input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Enter a color: </label
+        ><input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="number">Number: </label>
+        <input
+          type="number"
+          placeholder="Enter a number"
+          id="number"
+          name="number"
+          min="1"
+          max="1000"
+          step="5"
+        />
+      </p>
+      <!-- by default inside the form it will submit the form to specify it is not need type="button" -->
+      <button>Submit</button>
+    </form>
+
+    <h2>Hijacking searches</h2>
+    <h3>Search Google</h3>
+    <form action="http://wwww.reddit.com/search">
+      <label for="search">Search Reddit</label
+      ><input type="text" name="q" id="search" />
+      <button>Search Reddit!</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+      <label for="search">Search Google!</label
+      ><input type="text" name="q" id="search" />
+      <button>Search Google!</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results">
+      <label for="search">Search Youtube!</label
+      ><input type="text" name="search_query" id="search" />
+      <button>Search Youtube!</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree to everything</label>
+
+      <!-- radio buttons grouped in the same name will only be able to select one 
+        value attribute of radio will be sent through the form submit-->
+      <p>
+        <input type="radio" name="size" id="XS" value="XS" />
+        <label for="XS">XS</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="S" value="S" />
+        <label for="S">S</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="M" value="M" />
+        <label for="M">M</label>
+      </p>
+
+      <p>
+        <label for="meal">Please Select an Entree</label>
+        <select name="meal" id="meal">
+          <option value="fish">Fish</option>
+          <option value="vegetarian" selected>Vegetarian</option>
+          <option value="Steak">Steak</option>
+        </select>
+      </p>
+      <p>
+        <label for="cheese">Amount of cheese</label>
+        <input
+          type="range"
+          name="cheese_level"
+          id="cheese"
+          value="10"
+          min="0"
+          max="100"
+          step="5"
+        />
+      </p>
+      <p>
+        <label for="requests">Any special requests?</label>
+        <textarea
+          name="requests"
+          id="requests"
+          cols="30"
+          rows="10"
+          placeholder="type something here "
+        ></textarea>
+      </p>
+      <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+      <label for="first">Enter First Name:</label>
+      <input type="text" name="first" id="first" required />
+      <label for="username">Enter username:</label>
+      <input type="text" name="username" id="username" minlength="5" maxlength="10" required/>
+      <button>Submit</button>
+       </form>
+  </body>
+</html>

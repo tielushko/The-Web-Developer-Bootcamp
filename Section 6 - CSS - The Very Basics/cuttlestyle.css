@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  font-weight: normal;
+  text-decoration: blue underline wavy;
+  letter-spacing: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+p {
+  font-weight: 200;
+  line-height: 2.5;
+}
+
+a {
+  text-decoration: none;
+}

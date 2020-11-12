@@ -1,0 +1,22 @@
+section {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+
+/* alpha channel will only affect the background color. */
+#rgba {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  /* 0 transparent - 1 not at transparent  */
+}
+
+/* opacity affects all the children element */
+#opacity {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+  opacity: 0.5;
+  /* 0 transparent - 1 not at transparent  */
+}

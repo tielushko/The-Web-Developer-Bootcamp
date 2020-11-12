@@ -1,0 +1,38 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3d405b;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+#middle {
+  background-color: #81b29a;
+}
+
+/* static - doesn't change no matter what position we set  */
+#static #middle {
+  position: static;
+  top: 100px;
+  /* doesnt change */
+}
+
+/* relative - sets the positionn relative to the where it should be */
+#relative #middle {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  /* positions relatively 100px from top an left to where it would be. (so going down and to the right */
+}
+
+/* absolute -  removes the document form the flow entirely and moves it according to values given 
+
+positioned relative to the body, top moves up */
+#absolute {
+  position: relative;
+}
+#absolute #middle {
+  position: absolute;
+  top: 150px;
+}

@@ -1,0 +1,17 @@
+body {
+  color: purple;
+}
+
+section {
+  color: aqua;
+}
+
+form {
+  color: greenyellow;
+}
+
+button,
+input {
+  color: inherit;
+  /* notice the keyword inherit, not all elements inherit automatically from the overlaying elements, we need to explicitly state for them to inherit */
+}

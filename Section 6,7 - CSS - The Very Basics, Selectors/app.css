@@ -1,0 +1,97 @@
+/* * {
+  background-color: cyan;
+} */
+
+body {
+  background-color: #f1faee;
+}
+button {
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+/* id selector */
+#signup {
+  background-color: #1d3557;
+  color: #f1faee;
+}
+
+h1,
+h2 {
+  color: #1d3557;
+}
+
+span {
+  color: #457b9d;
+}
+
+/* class selector */
+.tag {
+  background-color: #e63946;
+  color: #f1faee;
+  font-size: 16px;
+}
+
+/* descendent selectors */
+.post a {
+  color: #457b9d;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a {
+  color: #e63946;
+}
+
+/* adjacent selector - any button right after the input */
+/* input + button {
+    background-color: pink;
+} */
+/* 
+h2 + button {
+    background-color: magenta;
+    font-size: 20px;
+} */
+
+/* direct child of the element a right in footer*/
+footer > a {
+  color: #457b9d;
+}
+
+/* attribute selector - select all inputs attribute of which is type*/
+input[type="password"] {
+  color: hotpink;
+}
+
+/* pseudo classes  - different states of the elements */
+.post button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post button:active {
+  background-color: #02c39a;
+}
+
+.post:nth-of-type(2n-1) {
+  background-color: #dfe8dc;
+}
+
+/* pseudo elements - things and elements of the page */
+
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::first-line {
+  color: purple;
+}
+
+p::selection {
+  background-color: #fcbf49;
+}
+

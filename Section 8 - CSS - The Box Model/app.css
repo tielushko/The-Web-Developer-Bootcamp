@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #e5989b;
+}
+
+h1 {
+  background-color: pink;
+  width: 200px;
+  padding-left: 100px;
+  padding-top: 50px;
+  margin: 0;
+}
+span {
+  /* note that we will be able to move the span horizontal margin but not vertically -> need to set the display property*/
+  margin-left: 50px;
+  /* display:
+   inline: 
+   block: 
+   inline-block:*/
+}
+#one {
+  background-color: #e5989b;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  /* making sure border is within the size of the contents 200*200 */
+  /* box-sizing: border-box; */
+}
+
+#two {
+  background-color: #b5838d;
+  border-width: 3px;
+  border-color: #ffcdb2;
+  border-style: dashed;
+  /* notice border style for just left side */
+  border-left-width: 8px;
+  padding-right: 50px;
+  margin: 200px;
+}
+
+#three {
+  background-color: #6d6875;
+  /* width style color shorthand property for the border */
+  border: 5px dotted black;
+  /* shorthand
+  padding: value; -same padding for all 4 sides
+  padding: value value; - vertical, horizontal
+  padding: val val val; - top, horizontal, bottom
+  padding: val val val val - top right bottom left*/
+}
+
+#four {
+  background-color: #e5989b;
+  border: 5px solid green;
+  border-radius: 50%;
+}
+
+button {
+  padding: 10px 20px 30px 40px;
+}

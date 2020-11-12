@@ -1,0 +1,33 @@
+h1 {
+  /* display: inline; */
+  background-color: palegoldenrod;
+  border: 3px solid black;
+  /* makes block level h1 behave as inline  */
+
+  margin: 50px;
+  /* on the inline elements the vertical margin, padding, and width, height will be respected */
+}
+
+span {
+  background-color: paleturquoise;
+  border: 3px solid black;
+  /* notice how width is not respected. */
+  width: 500px;
+  padding: 10px;
+  margin: 51px;
+  /* inline the padding and margin will ignored vertically but not horizontally. */
+  /* makes inline level span behave as block  */
+  /* display: block; */
+
+  /* a solution: inline-block -> behaves like an inline element, but width/height/margin/padding are all respected */
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: olivedrab;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+/* also can set display: none; for hiding the elements from the page */

@@ -4,7 +4,6 @@ Material Related to the "The Web Developer Bootcamp" by Colt Steele on Udemy
 ### Section 1: Introduction to the Course
 
 ### Section 2: Introduction to Front End Development
-
   * Setup
   * How Web Works
   * The Holy Trinity of web development

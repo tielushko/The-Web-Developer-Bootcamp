@@ -1,0 +1,83 @@
+/* UNITS IN CSS
+- Percentages value from the parent, or sometimes from the elements itself
+
+width: 50% - half the width of the parent element
+line-height: 50% - half the font-size of the element itself
+
+*/
+html {
+    font-size: 20px;
+}
+section {
+  background-color: #1d3557;
+  width: 800px;
+  height: 800px;
+}
+
+div {
+  background-color: #a8dadc;
+  width: 50%;
+  height: 50%;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
+}
+
+/* em and rem 
+
+with font-size, 1 em equals the font-size of the parent, 2 ems is twice the font size of parent
+
+with other properties, 1 em is equal to the computed font-size of the element itself*/
+#ems article {
+  font-size: 30px;
+}
+
+#ems h2 {
+  font-size: 2em;
+  /* whatever the font size is computed to be, we take that value and have the same margin 60px from 2em of article, then 1em is 60x of margin on left*/
+  margin-left: 1em;
+}
+
+#ems h3 {
+  font-size: 1.5em;
+}
+#ems p {
+  font-size: 1em;
+}
+
+/* allows for proper scaling of the button */
+#ems button {
+  font-size: 2.5em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #457b9d;
+}
+
+/* em is bad for nested types of elements that repeat as it will stack the sizes */
+
+#ems ul {
+  font-size: 1.5em;
+}
+
+/* root ems rems
+ relative to the root html elements font size, easier to work with 
+ 
+ if the root font-size is 20px, 1 rem is always 20px, 2 rem is always 40px, etc.*/
+
+ #rems h2 {
+    font-size: 3rem;
+ }
+ #rems h3 {
+    font-size: 2rem;
+ }
+
+ #rems ul {
+    font-size: 1rem;
+ }
+
+ #rems button {
+     font-size: 3rem;
+ }

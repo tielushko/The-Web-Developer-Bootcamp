@@ -1,0 +1,19 @@
+section {
+  width: 80%;
+  height: 800px;
+  background-image: url(https://images.unsplash.com/photo-1605031640201-a3c273afd694?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  /* scales without stretching, but will crop it - shrinks to fit in the box */
+  background-size: cover;
+  /* no cropping or stretching, but get a repeat*/
+  /* background-color: contain; */
+
+  /* start form bottom or top */
+  background-position: top;
+  /* order matters. bg size must be included after position of the image using center/cover for example */
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+}

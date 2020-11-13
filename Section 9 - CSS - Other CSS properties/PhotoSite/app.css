@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+nav {
+  font-size: 1.5em;
+  font-family: "Goldman", cursive;
+  text-transform: uppercase;
+  width: 30%;
+  padding-bottom: 1.66666%;
+  margin-top: 1.66666%;
+  margin-left: 1.66666%;
+  border-bottom: 2px solid lightgrey;
+}
+
+img {
+  width: 30%;
+  margin: 1.66666%;
+  /* margin: calc(10%/60); */
+}
+/* 
+#left-corner {
+    padding-top: 10px;
+    border-top: 2px solid lightgrey;
+} */

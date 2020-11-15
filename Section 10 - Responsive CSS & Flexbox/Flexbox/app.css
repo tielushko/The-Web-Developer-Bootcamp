@@ -1,0 +1,103 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  /* height: 500px; */
+  margin: 0 auto;
+  border: 5px solid #003049;
+
+  /* turns on the flexbox properties on the container element that enables us to line up the div elements */
+  display: flex;
+
+  /* flex-direction allows to determine the main axis of the container: row or column (can add row-reverwse to reverse the elements*/
+  flex-direction: row;
+
+  /* justify-content how the elements are distributed inside the content 
+  horizontally
+  align to left or right with flex-start or flex-end (depends if your axis is left to right or right to left., 
+  or center
+  or add space with space-between or space-around or space-evenly */
+
+  justify-content: center;
+  /* justify-content: space-evenly; */
+
+  /*  flex-wrap determines if there is a need to wrap the content from the main axis
+  use wrap or wrap-reverse; cross axis goes right to left if picked wrap-reverse. wrap upwards or downwards, left-to-right or right-to-left
+  use nowrap for no wrap*/
+  /* wrap reverse changes the alignment of the axis to the opposite*/
+
+  flex-wrap: wrap;
+
+  /* align-items used to align the conte vertically top to bottom flex-start or flex-end for top or bottom
+  center for center -cross axis
+  baseline will use the alignment of the boxes to be based on the text, not the midpoint of the heigh/width*/
+  align-items: flex-start;
+
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse;  */
+
+  /* align content distrubutes space between multiple rows or columns 
+    ONLY WHEN WE HAVE THE WRAP TURNED ON! flex-start, flex-end, center, space-around space-between */
+  /* align-content: flex-end; */
+
+  /* align-self - align to individual elements of the container. can change the alignment of an item along cross axis vertical */
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  /* font-size: 4em; */
+  text-align: center;
+  /* initial size of the element to add to flex box */
+  flex-basis: 200px;
+  /* limit the size of the element to add to the flex-box - accepts a unitless number */
+  /* flex-grow: 1; */
+  /* can also set min width or max width and play around with it as well */
+  /* flex-shrink - if items are larger than the container, they shrink accordingly */
+  /* can set all three in one go: flex: flex-grow | flex-shrink | flex-basis */
+}
+
+div:nth-of-type(1) {
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+
+div:nth-of-type(5) {
+  flex-grow: 2;
+  flex-shrink: 0;
+}
+
+/* another example */
+h2 {
+    text-align: center;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    border: 5px solid black;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c9;
+    /* flex: flex-grow | flex-shrink | flex-basis */
+    /* or grow | basis */
+    flex: 1 2 300px;
+    border: 2px solid white;
+}
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
+}
+/* div:nth-of-type(2) {
+    align-self: center;
+}
+div:nth-of-type(3) {
+    align-self: flex-end;
+} */

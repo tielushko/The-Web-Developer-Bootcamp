@@ -19,7 +19,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>Placeholder</h1>
+      <h1 class="display-1 text-primary">Bootstrap Playground (Display 1)</h1>
+      <h2 class="display-3 text-center">
+        Buttons <span class="badge badge-primary badge-pill">Badge</span>
+      </h2>
       <button type="button" class="btn btn-primary">Primary</button>
       <button type="button" class="btn btn-secondary">Secondary</button>
       <button type="button" class="btn btn-info">Info</button>
@@ -41,14 +44,51 @@
         Warning Block
       </button>
 
-      <button type="button" class="btn btn-primary" disabled>Primary Disabled</button>
+      <button type="button" class="btn btn-primary" disabled>
+        Primary Disabled
+      </button>
 
-      <p>
+      <button class="btn btn-primary">
+        Updates <span class="badge badge-light">9</span>
+      </button>
+
+      <h3 class="display-4 text-center">Button Groups</h3>
+
+      <div class="btn-group" role="group">
+        <button class="btn btn-warning">One</button>
+        <button class="btn btn-danger">Two</button>
+        <button class="btn btn-warning">Three</button>
+      </div>
+
+      <h3 class="display-4 text-center">Alerts</h3>
+
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <h4 class="alert-heading">Oh no</h4>
+        Danger! You are about to end the world as you know it!
+        <!-- arial close for creating a label -->
+        <button aria-label="close" class="close" data-dismiss="alert">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <h2 class="display-3 text-center">Typography</h2>
+      <p class="lead">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto natus
         modi aliquam qui tempora molestiae voluptate autem quo, nostrum facere
         commodi eum, repudiandae deserunt. Magni minus similique alias est
         eligendi?
       </p>
+
+      <h3 class="display-4 text-center">Blockquote</h3>
+      <blockquote class="blockquote bg-light">
+        <p class="mb-0">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+          consequatur quidem facere iure aut quod sapiente porro culpa quo
+          recusandae reiciendis, fugit vitae sint maxime provident. Perspiciatis
+          laborum facere sit.
+        </p>
+        <footer class="blockquote-footer">Mr. Lorem Ipsum</footer>
+      </blockquote>
     </div>
 
     <!-- Bootstrap JS - for real production, download bootstrap.min.css-->

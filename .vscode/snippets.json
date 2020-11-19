@@ -1,0 +1,7 @@
+{
+  "html": {
+    "snippets": {
+      "doc": "html[lang=${lang}]>(head>meta[charset=${charset}]+meta:vp+link[rel='stylesheet'. href='app.css']title{${1:Document}})+link+body"
+    }
+  }
+}

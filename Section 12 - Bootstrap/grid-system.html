@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- Personal styles to overwrite the Bootstrap styles -->
+    <link rel="stylesheet" href="app.css" />
+
+    <title>Bootstrap Grid</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-info text-center">The Grid System</h1>
+
+      <!-- grid needs to have row, each row consists of 12 units -->
+      <div class="row">
+        <!-- each row needs columns -->
+        <div class="col-2 bg-success">I am 2 units</div>
+        <div class="col-8 bg-warning">I am 8 units</div>
+        <div class="col-2 bg-success">I am 2 units</div>
+      </div>
+
+      <div class="row">
+        <!-- each row needs columns -->
+        <div class="col-3 bg-danger">I am 3 units</div>
+        <div class="col-6 bg-primary">I am 6 units</div>
+        <div class="col-3 bg-danger">I am 3 units</div>
+      </div>
+      <div class="row">
+        <!-- each row needs columns -->
+        <div class="col bg-success">I am autosized</div>
+        <div class="col bg-warning">I am autosized</div>
+        <div class="col bg-success">I am autosized</div>
+        <div class="col bg-warning">I am autosized</div>
+      </div>
+
+      <div class="row">
+        <!-- each row needs columns -->
+        <div class="col bg-primary">I am autosized</div>
+        <div class="col-8 bg-danger">I am 8</div>
+        <div class="col bg-primary">I am autosized</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="display-4 text-info text-center">Responsive Grid!</h2>
+
+      <div class="row">
+        <!-- after medium and up, take 6 units, anything below, assume the whole 12 units. -->
+        <div class="col-md-6 col-xl-3 bg-primary">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+          perferendis delectus quia ex molestias nemo quaerat repellat nam.
+          Error accusantium maxime debitis facilis animi! Dicta repellat
+          delectus ipsa numquam distinctio.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-success">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+          perferendis delectus quia ex molestias nemo quaerat repellat nam.
+          Error accusantium maxime debitis facilis animi! Dicta repellat
+          delectus ipsa numquam distinctio.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-danger">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+          perferendis delectus quia ex molestias nemo quaerat repellat nam.
+          Error accusantium maxime debitis facilis animi! Dicta repellat
+          delectus ipsa numquam distinctio.
+        </div>
+        <div class="col-md-6 col-xl-3 bg-warning">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+          perferendis delectus quia ex molestias nemo quaerat repellat nam.
+          Error accusantium maxime debitis facilis animi! Dicta repellat
+          delectus ipsa numquam distinctio.
+        </div>
+      </div>
+
+      <h2 class="display-4 text-info text-center">Grid Alignment!</h2>
+
+      <!-- notice the align items for the entire row  -->
+      <div class="row align-items-center">
+        <!-- align self for each column can be applied -->
+        <div class="col bg-primary">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+          modi fugit eveniet! In ad laudantium delectus aut voluptatem
+          asperiores, maxime voluptatibus natus sequi esse, nemo ex ipsa nam at.
+        </div>
+        <div class="col bg-danger">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+          modi fugit eveniet! In ad laudantium delectus aut voluptatem
+          asperiores, maxime voluptatibus natus sequi esse, nemo ex ipsa nam at.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+          delectus animi voluptatem blanditiis harum quos aspernatur, voluptas
+          obcaecati, alias odit ea suscipit tenetur? Illo explicabo, id
+          temporibus aut eaque nisi.Libero impedit possimus incidunt assumenda
+          consequatur nulla est, reprehenderit non voluptatem unde mollitia
+          dolores nam minima, deserunt quia ipsa soluta illum numquam! Ratione
+          enim, odio quis maiores eligendi consectetur autem!
+        </div>
+        <div class="col bg-warning">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+          modi fugit eveniet! In ad laudantium delectus aut voluptatem
+          asperiores, maxime voluptatibus natus sequi esse, nemo ex ipsa nam at.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+          natus quisquam! Earum ea veniam iure doloribus dolorem omnis
+          cupiditate exercitationem adipisci dolores vero officia eaque quas,
+          esse aut qui assumenda!
+        </div>
+        <div class="col bg-success align-self-end">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+          modi fugit eveniet! In ad laudantium delectus aut voluptatem
+          asperiores, maxime voluptatibus natus sequi esse, nemo ex ipsa nam at.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1480044965905-02098d419e96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <img
+            class="img-fluid"
+            src="https://images.unsplash.com/photo-1493236296276-d17357e28888?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <h2 class="display-4 text-center text-info">Justify Content</h2>
+
+      <!-- can also specify for specific screen sizes - justify-content-lg-around -->
+
+      <div class="row border justify-content-center justify-content-lg-around justify-content-xl-between">
+        <div class="col-md-4 bg-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          accusamus maxime odio doloribus illo! Nesciunt sit voluptas culpa
+          consequuntur praesentium adipisci dolore in quaerat beatae autem.
+          Ducimus ipsa nostrum mollitia.
+        </div>
+        <div class="col-md-4 bg-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          accusamus maxime odio doloribus illo! Nesciunt sit voluptas culpa
+          consequuntur praesentium adipisci dolore in quaerat beatae autem.
+          Ducimus ipsa nostrum mollitia.
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS - for real production, download bootstrap.min.css-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

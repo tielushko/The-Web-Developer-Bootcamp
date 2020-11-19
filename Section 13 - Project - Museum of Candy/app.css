@@ -35,6 +35,11 @@ h2 {
 .content {
   margin-top: 100px;
 }
+
+.scrolled-nav {
+  background-color: #dec0de;
+  transition: background-color 0.5s;
+}
 h2 {
   color: #ea1c2c;
 }

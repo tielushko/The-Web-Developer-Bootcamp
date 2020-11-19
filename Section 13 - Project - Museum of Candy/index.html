@@ -85,7 +85,7 @@
 
         <div class="col-md-6 text-center order-1 order-md-2 py-4 py-lg-0">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8">
+            <div class="col-10 col-lg-8 mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -106,9 +106,9 @@
 
     <section class="container-fluid px-0 content">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center order-1 py-4 py-lg-0">
+        <div class="col-md-6 text-center py-4 py-lg-0">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8">
+            <div class="col-10 col-lg-8 mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -125,7 +125,7 @@
           </div>
         </div>
 
-        <div class="col-md-6 order-2">
+        <div class="col-md-6">
           <img src="imgs/gumball.png" alt="" class="img-fluid" />
         </div>
       </div>
@@ -139,7 +139,7 @@
 
         <div class="col-md-6 text-center order-1 order-md-2 py-4 py-lg-0">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8">
+            <div class="col-10 col-lg-8 mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -174,5 +174,14 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function(){
+          var $nav = $("#primary-nav");
+          $nav.toggleClass("scrolled-nav", $(this).scrollTop() > $nav.height());
+        })
+      })
+    </script>
   </body>
 </html>

@@ -25,13 +25,29 @@ body {
   color: #ea1c2c;
 }
 
+#header-group h2,
 h2 {
-  font-size: 3em;
+  color: white;
+  font-size: 2.5rem;
   font-weight: 200;
 }
 
+.content {
+  margin-top: 100px;
+}
+h2 {
+  color: #ea1c2c;
+}
+
+p {
+  color: #f498b8;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+}
+
 @media (max-width: 1200px) {
-  h2 {
+  #header-group h2 {
     font-size: 2.2em;
   }
 }

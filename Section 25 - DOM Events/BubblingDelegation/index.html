@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bubbling and Delegation</title>
+
+        <style>
+            .hide {
+                display: none;
+                background-color: black;
+                width: 500px;
+                height: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Event Bubbling Prevention</h2>
+        <div id="hide">
+            Click to Hide
+            <button>Change color</button>
+        </div>
+
+        <h2>Event Delegation</h2>
+
+        <form action="dogs/" id="comment-form">
+            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="comment" placeholder="Leave a comment:" />
+            <button>Post a comment</button>
+        </form>
+
+        <h2>Tweets</h2>
+        <ul id="comments"></ul>
+
+        <script src="app.js"></script>
+    </body>
+</html>

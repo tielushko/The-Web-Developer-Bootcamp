@@ -1,0 +1,12 @@
+<%- include('partials/head')%>
+    
+        <!-- to include the repeating markup across all pages -->
+        <%- include('partials/navbar') %>
+        <h1>All of the cats</h1>
+
+        <ul>
+            <%for (let cat of cats) {%>
+            <li><%= cat %></li>
+            <% }%>
+        </ul>
+<%- include('partials/footer') %>

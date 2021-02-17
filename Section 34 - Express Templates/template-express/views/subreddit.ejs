@@ -4,11 +4,26 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            <%= subreddit.charAt(0).toUpperCase() + subreddit.slice(1) %>
-        </title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <script src="/js/bootstrap.min.js"></script>
+        <title><%= name.charAt(0).toUpperCase() + name.slice(1) %></title>
     </head>
     <body>
-        <h1>Browsing r/<%= subreddit %></h1>
+        <h1>Browsing r/<%= name %></h1>
+        <h2><%= description %></h2>
+        <p>Subscriber count<%= subscribers %></p>
+        <hr />
+
+        <% for (let post of posts) { %>
+        <hr />
+        <article>
+            <h3><%= post.title %></h3>
+            <h4><%= post.author %></h4>
+            <% if (post.img) {%>
+            <img src="<%= post.img %>" alt="" />
+            <% } %>
+        </article>
+        <hr />
+        <% } %>
     </body>
 </html>

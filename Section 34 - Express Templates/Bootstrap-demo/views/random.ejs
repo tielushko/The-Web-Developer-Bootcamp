@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Random</title>
-    </head>
-    <body>
+<%- include('partials/head')%>
+    
+        <%- include('partials/navbar') %>
         <h1>Your random number is: <%= rand //evaluate, and embed %></h1>
         <!-- use the javascript without the equal sign to evaluate some
         conditionals-->
@@ -16,5 +10,4 @@
         <h2>This is an ODD number!</h2>
         <%} %>
         <h3><%= rand % 2 === 0 ? 'EVEN': 'ODD' %></h3>
-    </body>
-</html>
+<%- include('partials/footer') %>

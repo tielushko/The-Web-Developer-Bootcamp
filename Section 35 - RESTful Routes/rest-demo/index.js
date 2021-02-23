@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const { v4: uuid } = require("uuid");
+const methodOverride = require("method-override");
 
 app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
@@ -9,8 +10,10 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 //to handle json data
 app.use(express.json());
+//method override to provide the methods outside of get and post in the form
+app.use(methodOverride("_method"));
 
-const comments = [
+let comments = [
     {
         id: uuid(),
         username: "Todd",
@@ -38,23 +41,9 @@ const comments = [
     },
 ];
 
-app.get("/tacos", (req, res) => {
-    res.send("GET /tacos response");
-});
-
-app.post("/tacos", (req, res) => {
-    const { meat, qty } = req.body;
-    res.send(`OK. Here are your ${qty} ${meat} tacos.`);
-});
-
 app.get("/comments", (req, res) => {
     res.render("comments/index.ejs", { comments });
 });
-
-app.get("/comments/new", (req, res) => {
-    res.render("comments/new.ejs");
-});
-
 app.post("/comments", (req, res) => {
     const { username, comment } = req.body;
     comments.push({ username: username, comment: comment, id: uuid() });
@@ -62,14 +51,37 @@ app.post("/comments", (req, res) => {
     res.redirect("/comments");
 });
 
+app.get("/comments/new", (req, res) => {
+    res.render("comments/new");
+});
+
 app.get("/comments/:id", (req, res) => {
     const { id } = req.params;
     const comment = comments.find((c) => c.id === id);
-    res.render("comments/show.ejs", { comment });
+    res.render("comments/show", { comment: comment });
 });
 
-app.listen(3000, () => {
-    console.log("LISTENING ON PORT 3000!");
+app.get("/comments/:id/edit", (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find((c) => c.id === id);
+    res.render("comments/edit", { comment });
+});
+app.patch("/comments/:id", (req, res) => {
+    const { id } = req.params;
+    const newCommentText = req.body.comment;
+    const foundComment = comments.find((c) => c.id === id);
+    foundComment.comment = newCommentText;
+    res.redirect("/comments");
+});
+
+app.delete("/comments/:id", (req, res) => {
+    const { id } = req.params;
+    const comment = comments.find((c) => c.id === id);
+    comments = comments.filter((c) => c.id !== id);
+    res.redirect("/comments");
+});
+app.listen(8000, () => {
+    console.log("LISTENING ON PORT 8000!");
 });
 
 // REST PATTERN website/resource/action
